@@ -10,63 +10,32 @@
 		655AE0C0287EBBC000F699B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655AE0BF287EBBC000F699B1 /* AppDelegate.swift */; };
 		655AE0C2287EBBC000F699B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655AE0C1287EBBC000F699B1 /* SceneDelegate.swift */; };
 		655AE0C4287EBBC000F699B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655AE0C3287EBBC000F699B1 /* ViewController.swift */; };
-		655AE0C7287EBBC000F699B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 655AE0C5287EBBC000F699B1 /* Main.storyboard */; };
 		655AE0C9287EBBC200F699B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 655AE0C8287EBBC200F699B1 /* Assets.xcassets */; };
 		655AE0CC287EBBC200F699B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 655AE0CA287EBBC200F699B1 /* LaunchScreen.storyboard */; };
-		655AE0D7287EBBC200F699B1 /* VkBootcampTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655AE0D6287EBBC200F699B1 /* VkBootcampTests.swift */; };
-		655AE0E1287EBBC200F699B1 /* VkBootcampUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655AE0E0287EBBC200F699B1 /* VkBootcampUITests.swift */; };
-		655AE0E3287EBBC200F699B1 /* VkBootcampUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655AE0E2287EBBC200F699B1 /* VkBootcampUITestsLaunchTests.swift */; };
+		655AE0F2287ED50E00F699B1 /* JSON config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655AE0F1287ED50E00F699B1 /* JSON config.swift */; };
+		6574092E287EE94C007A889F /* Network Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6574092D287EE94C007A889F /* Network Service.swift */; };
+		65740930287EEABE007A889F /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6574092F287EEABE007A889F /* TableViewCell.swift */; };
+		65740932287F242B007A889F /* VKLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65740931287F242B007A889F /* VKLabel.swift */; };
+		65740934287F24DC007A889F /* VKImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65740933287F24DC007A889F /* VKImageView.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		655AE0D3287EBBC200F699B1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 655AE0B4287EBBC000F699B1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 655AE0BB287EBBC000F699B1;
-			remoteInfo = VkBootcamp;
-		};
-		655AE0DD287EBBC200F699B1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 655AE0B4287EBBC000F699B1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 655AE0BB287EBBC000F699B1;
-			remoteInfo = VkBootcamp;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		655AE0BC287EBBC000F699B1 /* VkBootcamp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VkBootcamp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		655AE0BF287EBBC000F699B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		655AE0C1287EBBC000F699B1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		655AE0C3287EBBC000F699B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		655AE0C6287EBBC000F699B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		655AE0C8287EBBC200F699B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		655AE0CB287EBBC200F699B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		655AE0CD287EBBC200F699B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		655AE0D2287EBBC200F699B1 /* VkBootcampTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VkBootcampTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		655AE0D6287EBBC200F699B1 /* VkBootcampTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VkBootcampTests.swift; sourceTree = "<group>"; };
-		655AE0DC287EBBC200F699B1 /* VkBootcampUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VkBootcampUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		655AE0E0287EBBC200F699B1 /* VkBootcampUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VkBootcampUITests.swift; sourceTree = "<group>"; };
-		655AE0E2287EBBC200F699B1 /* VkBootcampUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VkBootcampUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		655AE0F1287ED50E00F699B1 /* JSON config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSON config.swift"; sourceTree = "<group>"; };
+		6574092D287EE94C007A889F /* Network Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Network Service.swift"; sourceTree = "<group>"; };
+		6574092F287EEABE007A889F /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		65740931287F242B007A889F /* VKLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKLabel.swift; sourceTree = "<group>"; };
+		65740933287F24DC007A889F /* VKImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		655AE0B9287EBBC000F699B1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		655AE0CF287EBBC200F699B1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		655AE0D9287EBBC200F699B1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -80,8 +49,6 @@
 			isa = PBXGroup;
 			children = (
 				655AE0BE287EBBC000F699B1 /* VkBootcamp */,
-				655AE0D5287EBBC200F699B1 /* VkBootcampTests */,
-				655AE0DF287EBBC200F699B1 /* VkBootcampUITests */,
 				655AE0BD287EBBC000F699B1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,8 +57,6 @@
 			isa = PBXGroup;
 			children = (
 				655AE0BC287EBBC000F699B1 /* VkBootcamp.app */,
-				655AE0D2287EBBC200F699B1 /* VkBootcampTests.xctest */,
-				655AE0DC287EBBC200F699B1 /* VkBootcampUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,29 +67,16 @@
 				655AE0BF287EBBC000F699B1 /* AppDelegate.swift */,
 				655AE0C1287EBBC000F699B1 /* SceneDelegate.swift */,
 				655AE0C3287EBBC000F699B1 /* ViewController.swift */,
-				655AE0C5287EBBC000F699B1 /* Main.storyboard */,
+				6574092F287EEABE007A889F /* TableViewCell.swift */,
+				65740933287F24DC007A889F /* VKImageView.swift */,
 				655AE0C8287EBBC200F699B1 /* Assets.xcassets */,
 				655AE0CA287EBBC200F699B1 /* LaunchScreen.storyboard */,
 				655AE0CD287EBBC200F699B1 /* Info.plist */,
+				655AE0F1287ED50E00F699B1 /* JSON config.swift */,
+				6574092D287EE94C007A889F /* Network Service.swift */,
+				65740931287F242B007A889F /* VKLabel.swift */,
 			);
 			path = VkBootcamp;
-			sourceTree = "<group>";
-		};
-		655AE0D5287EBBC200F699B1 /* VkBootcampTests */ = {
-			isa = PBXGroup;
-			children = (
-				655AE0D6287EBBC200F699B1 /* VkBootcampTests.swift */,
-			);
-			path = VkBootcampTests;
-			sourceTree = "<group>";
-		};
-		655AE0DF287EBBC200F699B1 /* VkBootcampUITests */ = {
-			isa = PBXGroup;
-			children = (
-				655AE0E0287EBBC200F699B1 /* VkBootcampUITests.swift */,
-				655AE0E2287EBBC200F699B1 /* VkBootcampUITestsLaunchTests.swift */,
-			);
-			path = VkBootcampUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,42 +99,6 @@
 			productReference = 655AE0BC287EBBC000F699B1 /* VkBootcamp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		655AE0D1287EBBC200F699B1 /* VkBootcampTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 655AE0E9287EBBC200F699B1 /* Build configuration list for PBXNativeTarget "VkBootcampTests" */;
-			buildPhases = (
-				655AE0CE287EBBC200F699B1 /* Sources */,
-				655AE0CF287EBBC200F699B1 /* Frameworks */,
-				655AE0D0287EBBC200F699B1 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				655AE0D4287EBBC200F699B1 /* PBXTargetDependency */,
-			);
-			name = VkBootcampTests;
-			productName = VkBootcampTests;
-			productReference = 655AE0D2287EBBC200F699B1 /* VkBootcampTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		655AE0DB287EBBC200F699B1 /* VkBootcampUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 655AE0EC287EBBC200F699B1 /* Build configuration list for PBXNativeTarget "VkBootcampUITests" */;
-			buildPhases = (
-				655AE0D8287EBBC200F699B1 /* Sources */,
-				655AE0D9287EBBC200F699B1 /* Frameworks */,
-				655AE0DA287EBBC200F699B1 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				655AE0DE287EBBC200F699B1 /* PBXTargetDependency */,
-			);
-			name = VkBootcampUITests;
-			productName = VkBootcampUITests;
-			productReference = 655AE0DC287EBBC200F699B1 /* VkBootcampUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -195,14 +111,6 @@
 				TargetAttributes = {
 					655AE0BB287EBBC000F699B1 = {
 						CreatedOnToolsVersion = 13.4.1;
-					};
-					655AE0D1287EBBC200F699B1 = {
-						CreatedOnToolsVersion = 13.4.1;
-						TestTargetID = 655AE0BB287EBBC000F699B1;
-					};
-					655AE0DB287EBBC200F699B1 = {
-						CreatedOnToolsVersion = 13.4.1;
-						TestTargetID = 655AE0BB287EBBC000F699B1;
 					};
 				};
 			};
@@ -220,8 +128,6 @@
 			projectRoot = "";
 			targets = (
 				655AE0BB287EBBC000F699B1 /* VkBootcamp */,
-				655AE0D1287EBBC200F699B1 /* VkBootcampTests */,
-				655AE0DB287EBBC200F699B1 /* VkBootcampUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -233,21 +139,6 @@
 			files = (
 				655AE0CC287EBBC200F699B1 /* LaunchScreen.storyboard in Resources */,
 				655AE0C9287EBBC200F699B1 /* Assets.xcassets in Resources */,
-				655AE0C7287EBBC000F699B1 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		655AE0D0287EBBC200F699B1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		655AE0DA287EBBC200F699B1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,53 +149,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6574092E287EE94C007A889F /* Network Service.swift in Sources */,
+				655AE0F2287ED50E00F699B1 /* JSON config.swift in Sources */,
 				655AE0C4287EBBC000F699B1 /* ViewController.swift in Sources */,
+				65740934287F24DC007A889F /* VKImageView.swift in Sources */,
+				65740932287F242B007A889F /* VKLabel.swift in Sources */,
+				65740930287EEABE007A889F /* TableViewCell.swift in Sources */,
 				655AE0C0287EBBC000F699B1 /* AppDelegate.swift in Sources */,
 				655AE0C2287EBBC000F699B1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		655AE0CE287EBBC200F699B1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				655AE0D7287EBBC200F699B1 /* VkBootcampTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		655AE0D8287EBBC200F699B1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				655AE0E3287EBBC200F699B1 /* VkBootcampUITestsLaunchTests.swift in Sources */,
-				655AE0E1287EBBC200F699B1 /* VkBootcampUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		655AE0D4287EBBC200F699B1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 655AE0BB287EBBC000F699B1 /* VkBootcamp */;
-			targetProxy = 655AE0D3287EBBC200F699B1 /* PBXContainerItemProxy */;
-		};
-		655AE0DE287EBBC200F699B1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 655AE0BB287EBBC000F699B1 /* VkBootcamp */;
-			targetProxy = 655AE0DD287EBBC200F699B1 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		655AE0C5287EBBC000F699B1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				655AE0C6287EBBC000F699B1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		655AE0CA287EBBC200F699B1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -442,7 +300,7 @@
 				INFOPLIST_FILE = VkBootcamp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -470,7 +328,7 @@
 				INFOPLIST_FILE = VkBootcamp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -483,82 +341,6 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		655AE0EA287EBBC200F699B1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 33389KCH5W;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = neskdan812Test.VkBootcampTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VkBootcamp.app/VkBootcamp";
-			};
-			name = Debug;
-		};
-		655AE0EB287EBBC200F699B1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 33389KCH5W;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = neskdan812Test.VkBootcampTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VkBootcamp.app/VkBootcamp";
-			};
-			name = Release;
-		};
-		655AE0ED287EBBC200F699B1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 33389KCH5W;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = neskdan812Test.VkBootcampUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = VkBootcamp;
-			};
-			name = Debug;
-		};
-		655AE0EE287EBBC200F699B1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 33389KCH5W;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = neskdan812Test.VkBootcampUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = VkBootcamp;
 			};
 			name = Release;
 		};
@@ -579,24 +361,6 @@
 			buildConfigurations = (
 				655AE0E7287EBBC200F699B1 /* Debug */,
 				655AE0E8287EBBC200F699B1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		655AE0E9287EBBC200F699B1 /* Build configuration list for PBXNativeTarget "VkBootcampTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				655AE0EA287EBBC200F699B1 /* Debug */,
-				655AE0EB287EBBC200F699B1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		655AE0EC287EBBC200F699B1 /* Build configuration list for PBXNativeTarget "VkBootcampUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				655AE0ED287EBBC200F699B1 /* Debug */,
-				655AE0EE287EBBC200F699B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
