@@ -1,5 +1,5 @@
 //
-//  JSON config.swift
+//  Service.swift
 //  VkBootcamp
 //
 //  Created by Daniel on 13.07.2022.

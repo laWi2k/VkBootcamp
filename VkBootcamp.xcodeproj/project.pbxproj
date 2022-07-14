@@ -12,11 +12,13 @@
 		655AE0C4287EBBC000F699B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655AE0C3287EBBC000F699B1 /* ViewController.swift */; };
 		655AE0C9287EBBC200F699B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 655AE0C8287EBBC200F699B1 /* Assets.xcassets */; };
 		655AE0CC287EBBC200F699B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 655AE0CA287EBBC200F699B1 /* LaunchScreen.storyboard */; };
-		655AE0F2287ED50E00F699B1 /* JSON config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655AE0F1287ED50E00F699B1 /* JSON config.swift */; };
-		6574092E287EE94C007A889F /* Network Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6574092D287EE94C007A889F /* Network Service.swift */; };
+		655AE0F2287ED50E00F699B1 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655AE0F1287ED50E00F699B1 /* Service.swift */; };
+		6574092E287EE94C007A889F /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6574092D287EE94C007A889F /* NetworkService.swift */; };
 		65740930287EEABE007A889F /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6574092F287EEABE007A889F /* TableViewCell.swift */; };
 		65740932287F242B007A889F /* VKLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65740931287F242B007A889F /* VKLabel.swift */; };
 		65740934287F24DC007A889F /* VKImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65740933287F24DC007A889F /* VKImageView.swift */; };
+		65E3667928804E38002EB8D0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E3667828804E38002EB8D0 /* Extensions.swift */; };
+		65E3667C288052D0002EB8D0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E3667B288052D0002EB8D0 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,11 +29,13 @@
 		655AE0C8287EBBC200F699B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		655AE0CB287EBBC200F699B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		655AE0CD287EBBC200F699B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		655AE0F1287ED50E00F699B1 /* JSON config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSON config.swift"; sourceTree = "<group>"; };
-		6574092D287EE94C007A889F /* Network Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Network Service.swift"; sourceTree = "<group>"; };
+		655AE0F1287ED50E00F699B1 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		6574092D287EE94C007A889F /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		6574092F287EEABE007A889F /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		65740931287F242B007A889F /* VKLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKLabel.swift; sourceTree = "<group>"; };
 		65740933287F24DC007A889F /* VKImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKImageView.swift; sourceTree = "<group>"; };
+		65E3667828804E38002EB8D0 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		65E3667B288052D0002EB8D0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,19 +68,61 @@
 		655AE0BE287EBBC000F699B1 /* VkBootcamp */ = {
 			isa = PBXGroup;
 			children = (
-				655AE0BF287EBBC000F699B1 /* AppDelegate.swift */,
-				655AE0C1287EBBC000F699B1 /* SceneDelegate.swift */,
-				655AE0C3287EBBC000F699B1 /* ViewController.swift */,
-				6574092F287EEABE007A889F /* TableViewCell.swift */,
-				65740933287F24DC007A889F /* VKImageView.swift */,
-				655AE0C8287EBBC200F699B1 /* Assets.xcassets */,
-				655AE0CA287EBBC200F699B1 /* LaunchScreen.storyboard */,
+				65E3666F28802EB6002EB8D0 /* Support */,
+				65E3667A28804E89002EB8D0 /* Helpers */,
+				65E3667428803032002EB8D0 /* Model */,
+				65E3667228802F33002EB8D0 /* Views */,
+				65E3667028802EF7002EB8D0 /* Controllers */,
 				655AE0CD287EBBC200F699B1 /* Info.plist */,
-				655AE0F1287ED50E00F699B1 /* JSON config.swift */,
-				6574092D287EE94C007A889F /* Network Service.swift */,
-				65740931287F242B007A889F /* VKLabel.swift */,
 			);
 			path = VkBootcamp;
+			sourceTree = "<group>";
+		};
+		65E3666F28802EB6002EB8D0 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				655AE0CA287EBBC200F699B1 /* LaunchScreen.storyboard */,
+				655AE0C8287EBBC200F699B1 /* Assets.xcassets */,
+				655AE0C1287EBBC000F699B1 /* SceneDelegate.swift */,
+				655AE0BF287EBBC000F699B1 /* AppDelegate.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		65E3667028802EF7002EB8D0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				655AE0C3287EBBC000F699B1 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		65E3667228802F33002EB8D0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				65740931287F242B007A889F /* VKLabel.swift */,
+				65740933287F24DC007A889F /* VKImageView.swift */,
+				6574092F287EEABE007A889F /* TableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		65E3667428803032002EB8D0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				655AE0F1287ED50E00F699B1 /* Service.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		65E3667A28804E89002EB8D0 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6574092D287EE94C007A889F /* NetworkService.swift */,
+				65E3667828804E38002EB8D0 /* Extensions.swift */,
+				65E3667B288052D0002EB8D0 /* Constants.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,10 +195,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6574092E287EE94C007A889F /* Network Service.swift in Sources */,
-				655AE0F2287ED50E00F699B1 /* JSON config.swift in Sources */,
+				6574092E287EE94C007A889F /* NetworkService.swift in Sources */,
+				655AE0F2287ED50E00F699B1 /* Service.swift in Sources */,
 				655AE0C4287EBBC000F699B1 /* ViewController.swift in Sources */,
 				65740934287F24DC007A889F /* VKImageView.swift in Sources */,
+				65E3667928804E38002EB8D0 /* Extensions.swift in Sources */,
+				65E3667C288052D0002EB8D0 /* Constants.swift in Sources */,
 				65740932287F242B007A889F /* VKLabel.swift in Sources */,
 				65740930287EEABE007A889F /* TableViewCell.swift in Sources */,
 				655AE0C0287EBBC000F699B1 /* AppDelegate.swift in Sources */,
