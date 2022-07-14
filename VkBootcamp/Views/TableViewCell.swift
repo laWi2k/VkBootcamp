@@ -8,15 +8,17 @@
 import UIKit
 
 class TableViewCell: UITableViewCell {
-    
+    // MARK: - Identifier
     static let identifier = "TableViewCell"
     
+    //MARK: - Variables
     let activityIndicator = UIActivityIndicatorView(style: .medium)
     
     let appName = VKLabel(text: "App", font: .systemFont(ofSize: 18))
     var appIcon = VKImageView(cornerRadius: 13)
     let appDescription = VKLabel(text: "Some text to simulate filling of the container", font: .systemFont(ofSize: 12), numberOfLines: 2)
     
+    //MARK: - Initialization
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
@@ -51,12 +53,7 @@ class TableViewCell: UITableViewCell {
         ])
     }
     
-    private func stopAnimating() {
-        activityIndicator.stopAnimating()
-    }
-    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-
 }

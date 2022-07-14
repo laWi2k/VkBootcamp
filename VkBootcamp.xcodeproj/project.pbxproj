@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		655AE0C0287EBBC000F699B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655AE0BF287EBBC000F699B1 /* AppDelegate.swift */; };
 		655AE0C2287EBBC000F699B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655AE0C1287EBBC000F699B1 /* SceneDelegate.swift */; };
-		655AE0C4287EBBC000F699B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655AE0C3287EBBC000F699B1 /* ViewController.swift */; };
+		655AE0C4287EBBC000F699B1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655AE0C3287EBBC000F699B1 /* MainViewController.swift */; };
 		655AE0C9287EBBC200F699B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 655AE0C8287EBBC200F699B1 /* Assets.xcassets */; };
 		655AE0CC287EBBC200F699B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 655AE0CA287EBBC200F699B1 /* LaunchScreen.storyboard */; };
 		655AE0F2287ED50E00F699B1 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655AE0F1287ED50E00F699B1 /* Service.swift */; };
@@ -19,13 +19,14 @@
 		65740934287F24DC007A889F /* VKImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65740933287F24DC007A889F /* VKImageView.swift */; };
 		65E3667928804E38002EB8D0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E3667828804E38002EB8D0 /* Extensions.swift */; };
 		65E3667C288052D0002EB8D0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E3667B288052D0002EB8D0 /* Constants.swift */; };
+		65E3667F28805650002EB8D0 /* Reachability in Frameworks */ = {isa = PBXBuildFile; productRef = 65E3667E28805650002EB8D0 /* Reachability */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		655AE0BC287EBBC000F699B1 /* VkBootcamp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VkBootcamp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		655AE0BF287EBBC000F699B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		655AE0C1287EBBC000F699B1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		655AE0C3287EBBC000F699B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		655AE0C3287EBBC000F699B1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		655AE0C8287EBBC200F699B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		655AE0CB287EBBC200F699B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		655AE0CD287EBBC200F699B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -43,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65E3667F28805650002EB8D0 /* Reachability in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,7 +94,7 @@
 		65E3667028802EF7002EB8D0 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				655AE0C3287EBBC000F699B1 /* ViewController.swift */,
+				655AE0C3287EBBC000F699B1 /* MainViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -141,6 +143,9 @@
 			dependencies = (
 			);
 			name = VkBootcamp;
+			packageProductDependencies = (
+				65E3667E28805650002EB8D0 /* Reachability */,
+			);
 			productName = VkBootcamp;
 			productReference = 655AE0BC287EBBC000F699B1 /* VkBootcamp.app */;
 			productType = "com.apple.product-type.application";
@@ -169,6 +174,9 @@
 				Base,
 			);
 			mainGroup = 655AE0B3287EBBC000F699B1;
+			packageReferences = (
+				65E3667D28805650002EB8D0 /* XCRemoteSwiftPackageReference "Reachability" */,
+			);
 			productRefGroup = 655AE0BD287EBBC000F699B1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -197,7 +205,7 @@
 			files = (
 				6574092E287EE94C007A889F /* NetworkService.swift in Sources */,
 				655AE0F2287ED50E00F699B1 /* Service.swift in Sources */,
-				655AE0C4287EBBC000F699B1 /* ViewController.swift in Sources */,
+				655AE0C4287EBBC000F699B1 /* MainViewController.swift in Sources */,
 				65740934287F24DC007A889F /* VKImageView.swift in Sources */,
 				65E3667928804E38002EB8D0 /* Extensions.swift in Sources */,
 				65E3667C288052D0002EB8D0 /* Constants.swift in Sources */,
@@ -414,6 +422,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		65E3667D28805650002EB8D0 /* XCRemoteSwiftPackageReference "Reachability" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ashleymills/Reachability.swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		65E3667E28805650002EB8D0 /* Reachability */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 65E3667D28805650002EB8D0 /* XCRemoteSwiftPackageReference "Reachability" */;
+			productName = Reachability;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 655AE0B4287EBBC000F699B1 /* Project object */;
 }

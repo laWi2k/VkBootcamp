@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainViewController.swift
 //  VkBootcamp
 //
 //  Created by Daniel on 13.07.2022.
@@ -7,8 +7,12 @@
 
 import UIKit
 import SafariServices
+import Reachability
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class MainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    // MARK: - Variables
+    let reachability = try! Reachability()
     
     var apps = [Service]()
     
@@ -19,6 +23,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return tableView
     }()
     
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -28,9 +33,29 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         setupTableView()
         settingConstraints()
-        fetchApps()
+        setupReachability()
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        reachability.stopNotifier()
+    }
+    
+    // MARK: - Private
+    private func setupReachability() {
+        reachability.whenReachable = { [weak self] reachability in
+            self?.fetchApps()
+        }
+        
+        reachability.whenUnreachable = { [weak self] _ in
+            self?.alert(title: "Ошибка подключения", text: "Невозможно установить соединение с сервером, проверьте подключение или попробуйте позже")
+        }
+
+        do {
+            try reachability.startNotifier()
+        } catch {
+            print("Unable to start notifier")
+        }
+    }
     
     private func fetchApps() {
         NetworkService.shared.fetchAppsData("https://publicstorage.hb.bizmrg.com/sirius/result.json") { [weak self] result in
@@ -42,13 +67,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                     self?.tableView.reloadData()
                 }
             case .failure(let error):
-                self?.alert(title: "Error", text: error.rawValue)
+                self?.alert(title: "Ошибка", text: error.rawValue)
             }
         }
     }
     
     private func setupTableView() {
-        tableView.register(TableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView.register(TableViewCell.self, forCellReuseIdentifier: TableViewCell.identifier)
         tableView.delegate = self
         tableView.dataSource = self
         tableView.separatorColor = .clear
@@ -64,13 +89,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
     }
     
-    // MARK: TableView DataSource
+    // MARK: - TableView DataSource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return apps.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? TableViewCell else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: TableViewCell.identifier, for: indexPath) as? TableViewCell else {
             return UITableViewCell()
         }
         

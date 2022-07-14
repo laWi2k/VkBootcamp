@@ -9,6 +9,7 @@ import UIKit
 
 class VKImageView: UIImageView {
 
+    // MARK: - Initialization
     init(cornerRadius: CGFloat) {
         super.init(frame: .zero)
         

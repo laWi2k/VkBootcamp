@@ -9,6 +9,7 @@ import UIKit
 
 class VKLabel: UILabel {
 
+    // MARK: - Initialization
     init(text: String, font: UIFont, numberOfLines: Int = 1) {
         super.init(frame: .zero)
         
